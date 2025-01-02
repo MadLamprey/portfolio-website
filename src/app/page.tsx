@@ -1,12 +1,12 @@
 import './globals.css';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const navigation = [
-  { name: 'Education', href: '/education' },
-  { name: 'Projects', href: '/projects' },
+  { name: 'About', href: '/about' },
   { name: 'Experience', href: '/experience' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Resume', href: '/resume' },
 ];
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
           Software engineer with a passion to create for social good
         </h2>
       </div>
-      {/* <Image src="/profile.jpg" alt="Aditya Misra" width={200} height={200} className="rounded-full animate-fade-in" /> */}
+      <Image src="/profile.png" alt="Aditya Misra" width={300} height={300} className="rounded-full animate-fade-in" />
     </div>
   );
 }
