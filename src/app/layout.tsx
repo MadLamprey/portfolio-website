@@ -46,15 +46,9 @@ export default function RootLayout({
           <div className="grid">
           {windowWidth > 0 && [...Array(20).keys()].map( (_, index) => {
             return <div key={'b_' + index} className="column">
-              {
-
-                getBlocks()
-
-              }
+              {getBlocks()}
           </div>
-
           })
-
         }
         </div>
         </div>
