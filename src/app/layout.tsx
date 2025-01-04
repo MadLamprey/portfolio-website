@@ -19,11 +19,11 @@ export default function RootLayout({
     const blockSize = windowWidth * 0.05;
     const nbOfBlocks = Math.ceil(windowHeight / blockSize);
     return [...Array(nbOfBlocks).keys()].map((_, i) => {
-      return <div key={i} onMouseEnter={(e) => {colorize(e.target)}}></div>
+      return <div key={i} onMouseEnter={(e) => {colorize(e.target as HTMLElement)}}></div>
     });
   }
 
-  const colorize = (target) => {
+  const colorize = (target: HTMLElement) => {
     target.style.backgroundColor = 'white';
     setTimeout(() => {
       target.style.backgroundColor = 'transparent';
