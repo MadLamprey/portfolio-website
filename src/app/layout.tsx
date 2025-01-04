@@ -2,6 +2,9 @@
 
 import "./globals.css";
 import { useState, useEffect } from "react";
+import { DM_Sans } from "next/font/google";
+
+const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -40,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='bg-black'
+        className={`${dm_sans.className} bg-black`}
       >
         <div className="container">
           <div className="grid">
