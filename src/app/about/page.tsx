@@ -1,11 +1,10 @@
 "use client";
 
-import { NavBar } from "../components/navbar"
+import NavBar from "../components/navbar"
 import { University, Library, Pencil, LinkIcon } from "lucide-react";
 import { useState } from "react";
 import {Popover, PopoverTrigger, PopoverContent} from "@nextui-org/popover";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Education() {
     const [isEduOpen, setIsEduOpen] = useState(false);
@@ -71,7 +70,7 @@ export default function Education() {
                             <br />
                             <Link href="https://medium.com/@adityamisra_68704" className="flex flex-row items-center justify-center gap-2">
                                 <LinkIcon size={15} />
-                                <p className="text-lg underline">Aditya's Blog on Medium</p>
+                                <p className="text-lg underline">Aditya&apos;s Blog on Medium</p>
                             </Link>
                         </div>
                     </PopoverContent>

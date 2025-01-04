@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export const NavBar: React.FC = () => {
+export default function NavBar()  {
     return (
         <div className='fixed inset-x-0 top-0 z-20 backdrop-blur duration-200'>
             <div className="flex flex-row items-center justify-between mx-5 p-6">

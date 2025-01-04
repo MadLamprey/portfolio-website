@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { NavBar } from "../components/navbar"
+import NavBar from "../components/navbar"
 import { Github, Linkedin, Mail, Phone } from "lucide-react"
 
 export default function Contact() {
