@@ -12,13 +12,19 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen gap-10 overflow-hidden">
-      <Image src="/profile.png" alt="Aditya Misra" width={300} height={300} className="rounded-full animate-fade-in" />
+      <Image
+        src="/profile.png"
+        alt="Aditya Misra"
+        width={200}
+        height={200}
+        className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full animate-fade-in"
+      />
       <div className="flex flex-col gap-5">
-        <h1 className="text-8xl text-transparent duration-1000 bg-white animate-title bg-clip-text uppercase">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl text-transparent duration-1000 bg-white animate-title bg-clip-text uppercase text-center">
           Aditya Misra
         </h1>
         <div className="text-center animate-fade-in">
-          <h2 className="text-xl text-zinc-400">
+          <h2 className="text-lg sm:text-xl md:text-2xl text-zinc-400">
             Software engineer with a passion to create for social good
           </h2>
         </div>
@@ -29,7 +35,7 @@ export default function Home() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-3xl duration-500 text-zinc-400 hover:text-white"
+              className="text-xl sm:text-2xl md:text-3xl duration-500 text-zinc-400 hover:text-white"
             >
               {item.name}
             </Link>
