@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dm_sans.className} bg-black`}
+        className={`${dm_sans.className} bg-black overflow-hidden`}
       >
         <div className="container">
           <div className="grid">

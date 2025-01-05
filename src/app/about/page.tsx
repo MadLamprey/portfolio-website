@@ -32,12 +32,12 @@ export default function Education() {
     ]
 
     return (
-        <div className="flex flex-col items-center justify-center mx-auto gap-15">
+        <div className="flex flex-col items-center justify-center mx-auto gap-15 h-screen overflow-hidden">
             <NavBar />
             <div className={`my-40 flex flex-col items-center justify-center gap-20 ${isEduOpen || isSkillOpen || isBlogOpen || isReadOpen ? "blur": ""}`}>
-                <div className="text-zinc-200 text-6xl animate-title text-center">Hi!</div>
+                <div className="text-zinc-200 text-4xl sm:text-5xl md:text-6xl animate-title text-center">Hi!</div>
                 <div className="border-4 rounded-xl border-zinc-500 p-10 max-w-6xl z-10 text-zinc-200 bg-zinc-800">
-                    <p className="text-center">I am a <span className="text-2xl">Computer Science</span> student from India, currently studying in Singapore. My coursework and internships have revealed the transformative power of <span className="text-2xl">software engineering</span>, inspiring me to build solutions for <span className="text-2xl">social good</span>. I am also deeply intrigued by <span className="text-2xl">Artificial Intelligence</span> and <span className="text-2xl">Machine Learning</span>, and how they will shape our future.</p>
+                    <p className="text-center text-sm sm:text-md md:text-lg">I am a <span className="text-2xl">Computer Science</span> student from India, currently studying in Singapore. My coursework and internships have revealed the transformative power of <span className="text-2xl">software engineering</span>, inspiring me to build solutions for <span className="text-2xl">social good</span>. I am also deeply intrigued by <span className="text-2xl">Artificial Intelligence</span> and <span className="text-2xl">Machine Learning</span>, and how they will shape our future.</p>
                 </div>
                 <div className="flex flex-row gap-20 my-0 z-10">
                 <Popover placement="top" isOpen={isEduOpen} onOpenChange={(x) => setIsEduOpen(x)}>
