@@ -11,8 +11,19 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
-      <nav className="my-10 animate-fade-in">
+    <div className="flex flex-col items-center justify-center w-screen h-screen gap-10 overflow-hidden">
+      <Image src="/profile.png" alt="Aditya Misra" width={300} height={300} className="rounded-full animate-fade-in" />
+      <div className="flex flex-col gap-5">
+        <h1 className="text-8xl text-transparent duration-1000 bg-white animate-title bg-clip-text uppercase">
+          Aditya Misra
+        </h1>
+        <div className="text-center animate-fade-in">
+          <h2 className="text-xl text-zinc-400">
+            Software engineer with a passion to create for social good
+          </h2>
+        </div>
+      </div>
+      <nav className="animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -25,15 +36,6 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <h1 className="text-8xl text-transparent duration-1000 bg-white animate-title bg-clip-text">
-        Aditya Misra
-      </h1>
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-xl text-zinc-400">
-          Software engineer with a passion to create for social good
-        </h2>
-      </div>
-      <Image src="/profile.png" alt="Aditya Misra" width={300} height={300} className="rounded-full animate-fade-in" />
     </div>
   );
 }

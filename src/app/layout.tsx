@@ -2,9 +2,9 @@
 
 import "./globals.css";
 import { useState, useEffect } from "react";
-import { DM_Sans } from "next/font/google";
+import { Overpass_Mono } from "next/font/google";
 
-const dm_sans = DM_Sans({ subsets: ["latin"] });
+const dm_sans = Overpass_Mono({ weight: "400", subsets: ["latin"] });
 
 export default function RootLayout({
   children,

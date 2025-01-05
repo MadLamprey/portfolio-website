@@ -36,13 +36,13 @@ export default function Education() {
             <NavBar />
             <div className={`my-40 flex flex-col items-center justify-center gap-20 ${isEduOpen || isSkillOpen || isBlogOpen || isReadOpen ? "blur": ""}`}>
                 <div className="text-zinc-200 text-6xl animate-title text-center">Hi!</div>
-                <div className="border-4 rounded-xl border-zinc-500 p-10 max-w-6xl z-10 text-zinc-200">
+                <div className="border-4 rounded-xl border-zinc-500 p-10 max-w-6xl z-10 text-zinc-200 bg-zinc-800">
                     <p className="text-center">I am a <span className="text-2xl">Computer Science</span> student from India, currently studying in Singapore. My coursework and internships have revealed the transformative power of <span className="text-2xl">software engineering</span>, inspiring me to build solutions for <span className="text-2xl">social good</span>. I am also deeply intrigued by <span className="text-2xl">Artificial Intelligence</span> and <span className="text-2xl">Machine Learning</span>, and how they will shape our future.</p>
                 </div>
                 <div className="flex flex-row gap-20 my-0 z-10">
                 <Popover placement="top" isOpen={isEduOpen} onOpenChange={(x) => setIsEduOpen(x)}>
                     <PopoverTrigger>
-                        <div className="border rounded-xl border-zinc-600 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsEduOpen(true)}}>
+                        <div className="border rounded-xl border-zinc-600 bg-zinc-800 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsEduOpen(true)}}>
                             <span className="text-zinc-200 border-zinc-500">{<University size={30} />}</span>
                             <div className="text-zinc-200 text-2xl">Education</div>
                         </div>
@@ -60,7 +60,7 @@ export default function Education() {
                 </Popover>
                 <Popover placement="top" isOpen={isSkillOpen} onOpenChange={(x) => setIsSkillOpen(x)}>
                     <PopoverTrigger>
-                        <div className="border rounded-xl border-zinc-600 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsSkillOpen(true)}}>
+                        <div className="border rounded-xl border-zinc-600 bg-zinc-800 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsSkillOpen(true)}}>
                             <span className="text-zinc-200 border-zinc-500">{<Computer size={30} />}</span>
                             <div className="text-zinc-200 text-2xl">Skills</div>
                         </div>
@@ -95,7 +95,7 @@ export default function Education() {
                 </Popover>
                 <Popover placement="top" isOpen={isBlogOpen} onOpenChange={(x) => setIsBlogOpen(x)}>
                     <PopoverTrigger>
-                        <div className="border rounded-xl border-zinc-600 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsBlogOpen(true)}}>
+                        <div className="border rounded-xl border-zinc-600 bg-zinc-800 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsBlogOpen(true)}}>
                             <span className="text-zinc-200 border-zinc-500">{<Pencil size={30} />}</span>
                             <div className="text-zinc-200 text-2xl">Blog</div>
                         </div>
@@ -114,7 +114,7 @@ export default function Education() {
                 </Popover>
                 <Popover placement="top" isOpen={isReadOpen} onOpenChange={(x) => setIsReadOpen(x)}>
                     <PopoverTrigger>
-                        <div className="border rounded-xl border-zinc-600 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsReadOpen(true)}}>
+                        <div className="border rounded-xl border-zinc-600 bg-zinc-800 hover:bg-zinc-600 flex flex-col items-center justify-center w-56 h-24 hover:cursor-pointer" onClick={() => {setIsReadOpen(true)}}>
                             <span className="text-zinc-200 border-zinc-500">{<Library size={30} />}</span>
                             <div className="text-zinc-200 text-2xl">Reading List</div>
                         </div>
