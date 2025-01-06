@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
       <nav className="animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex flex-col sm:flex-row items-center justify-center gap-4 justify-items-center p-4">
           {navigation.map((item) => (
             <Link
               key={item.name}
