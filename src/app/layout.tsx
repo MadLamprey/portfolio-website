@@ -3,6 +3,7 @@
 import "./globals.css";
 import { useState, useEffect } from "react";
 import { Overpass_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 const dm_sans = Overpass_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -56,6 +57,7 @@ export default function RootLayout({
         </div>
         </div>
         {children}
+        <Analytics />
       </body>
     </html>
   );
